@@ -271,7 +271,7 @@
 				}
 				if (forceAnim == false) {
 					if (event == 'load') {
-						$(window).load(function() {
+						$(window).on("load", function () {
 							Plugin.prototype._animateBar.apply(this, [paramsAnim]);
 							if (opt.labelNumCount) {
 								Plugin.prototype._labelNumCounter.apply(this, [paramsCount]);
